@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Awesome Website</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* General Body Styles */
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f8f9fa;
+            color: #343a40;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 0 20px;
+            overflow: hidden; /* Clear floats */
+        }
+
+        /* Header Styles */
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 1.5em 0;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.8em;
+            letter-spacing: 1px;
+        }
+
+        /* Navigation Styles */
+        nav {
+            background-color: #0056b3;
+            padding: 0.8em 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 18px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1em;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #e2e6ea;
+            text-decoration: underline;
+        }
+
+        /* Section Styles */
+        section {
+            padding: 40px 0;
+            border-bottom: 1px solid #e0e0e0;
+            background-color: white;
+            margin-bottom: 20px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+            border-radius: 8px;
+        }
+
+        section:last-of-type {
+            border-bottom: none;
+        }
+
+        section h2 {
+            font-size: 2.2em;
+            color: #007bff;
+            text-align: center;
+            margin-bottom: 30px;
+            position: relative;
+        }
+
+        section h2::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 3px;
+            background-color: #007bff;
+            margin: 10px auto 0;
+        }
+
+        /* Paragraph and List Styles */
+        p {
+            font-size: 1.1em;
+            margin-bottom: 1em;
+            text-align: justify;
+        }
+
+        ul, ol {
+            margin-bottom: 1em;
+            padding-left: 25px;
+        }
+
+        ul li, ol li {
+            margin-bottom: 0.5em;
+        }
+
+        /* Image Styles */
+        .hero-image {
+            width: 100%;
+            height: 300px;
+            object-fit: cover; /* Ensures image covers the area without distortion */
+            border-radius: 8px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        /* Form Styles */
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 25px;
+            background-color: #f1f7fe;
+            border: 1px solid #d1e0ff;
+            border-radius: 8px;
+        }
+
+        form label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #0056b3;
+        }
+
+        form input[type="text"],
+        form input[type="email"],
+        form textarea {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ced4da;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+
+        form textarea {
+            resize: vertical; /* Allows user to resize textarea vertically */
+        }
+
+        form input[type="submit"] {
+            background-color: #28a745;
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.1em;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        form input[type="submit"]:hover {
+            background-color: #218838;
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: #343a40;
+            color: white;
+            text-align: center;
+            padding: 1.5em 0;
+            margin-top: 40px;
+            box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to My Awesome Website!</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <section id="home">
+            <h2>Home</h2>
+            <img class="hero-image" src="https://via.placeholder.com/1100x300?text=Your+Hero+Image+Here" alt="A beautiful landscape or abstract image">
+            <p>This is the main section of our website. We are dedicated to providing excellent content and services. Explore our pages to learn more about what we offer and how we can help you.</p>
+            <p>Our mission is to create engaging and informative experiences for our visitors. We believe in quality and user satisfaction above all else.</p>
+        </section>
+
+        <section id="about">
+            <h2>About Us</h2>
+            <p>We are a passionate team focused on delivering high-quality web solutions. Our journey began with a simple idea: to make the web a better place for everyone.</p>
+            <p>Our team comprises experienced professionals in web development, design, and content creation. We work collaboratively to bring innovative ideas to life.</p>
+            <ul>
+                <li>Founded in 2023</li>
+                <li>Located in the heart of the digital world</li>
+                <li>Committed to excellence</li>
+            </ul>
+        </section>
+
+        <section id="services">
+            <h2>Our Services</h2>
+            <p>We offer a range of services tailored to meet your needs:</p>
+            <ol>
+                <li>Web Design & Development: Custom websites built from scratch.</li>
+                <li>Content Creation: Engaging and SEO-friendly content for your audience.</li>
+                <li>Digital Marketing: Strategies to boost your online presence.</li>
+                <li>Consulting: Expert advice to guide your digital projects.</li>
+            </ol>
+            <p>Each service is designed with precision and a focus on delivering measurable results for our clients.</p>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Have questions? Want to start a project? Feel free to reach out to us using the form below. We'd love to hear from you!</p>
+            <form action="#" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject">
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="6" required></textarea>
+
+                <input type="submit" value="Send Message">
+            </form>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 My Awesome Website. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
